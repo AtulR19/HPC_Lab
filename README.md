@@ -1,0 +1,1 @@
+I am Atul Ravi. S20240030352 UG3 AIDS branch. This is a lab0 assignment. Bubble sort is done on 18250 elements and quick sort is done on 1000000 elements. All the screen shots, codes and reports are uploaded on the github repo. Thank you
