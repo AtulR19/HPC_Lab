@@ -1,0 +1,39 @@
+Comparison of Bubble Sort and Quick Sort
+
+Metric
+
+Execution Time
+- Quick Sort (-O0): 0.17 s
+- Quick Sort (-O2): 0.06 s
+- Quick Sort (-O3): 0.06 s
+- Bubble Sort: 0.52 s
+
+CPU Cycles
+- Quick Sort (-O0): 1,158,649,973
+- Quick Sort (-O2): 499,988,533
+- Quick Sort (-O3): 473,431,824
+- Bubble Sort: 2,294,289,034
+
+Instructions
+- Quick Sort (-O0): 2,056,527,865
+- Quick Sort (-O2): 559,199,138
+- Quick Sort (-O3): 511,814,988
+- Bubble Sort: 5,680,293,762
+
+IPC (Instructions Per Cycle)
+- Quick Sort (-O0): 1.77
+- Quick Sort (-O2): 1.12
+- Quick Sort (-O3): 1.08
+- Bubble Sort: 2.48
+
+Cache References
+- Quick Sort (-O0): 1,663,753
+- Quick Sort (-O2): 1,214,962
+- Quick Sort (-O3): 1,407,600
+- Bubble Sort: 68,008
+
+Cache Misses
+- Quick Sort (-O0): 756,195
+- Quick Sort (-O2): 444,241
+- Quick Sort (-O3): 538,697
+- Bubble Sort: 12,925

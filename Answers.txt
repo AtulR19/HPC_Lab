@@ -1,0 +1,9 @@
+1) Quicksort did much better than bubble sort. I tired bubble sort on 1 million numbers and took more than 5 mins and still was not able to sort it whereas quick sort did 1 million 0.09 sec.
+
+2) Sorting function is taking the most time. Since it is sorting 1 million elements.
+
+3) Execution time increases as the input size increases. For QuickSort, the increase is approximately O(n log n), so the growth is moderate. For Bubble Sort, the increase is O(n²), causing the execution time to grow much more rapidly as the number of elements increases.
+
+4) Compiler optimizations (-O2 and -O3) reduced the execution time by generating more efficient machine code. They optimize loops, reduce unnecessary operations, inline small functions where appropriate, and improve instruction scheduling. Among them, -O3 generally provides the best performance, while -O2 also offers significant improvements over -O0.
+
+5) I would suggest quicksort for the bigger dataset as it is faster compared to bubble sort on big dataset and it also less space complexity than of bubble sort
