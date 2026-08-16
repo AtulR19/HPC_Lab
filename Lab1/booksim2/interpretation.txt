@@ -1,0 +1,39 @@
+===================================================================
+                  LAB 1: MESH VS TORUS ANALYSIS
+===================================================================
+
+1. LOW TRAFFIC PERFORMANCE (Injection Rate = 0.02)
+-------------------------------------------------------------------
+When traffic is light, packets move quickly with almost no waiting
+time in router buffers. 
+
+* The 8x8 Torus is slightly faster than the 8x8 Mesh (182.31 cycles 
+  vs 186.03 cycles).
+* Reason: The Torus has wrap-around links that connect the edges. 
+  This acts as a shortcut, cutting the maximum number of steps 
+  (hops) a packet needs to take across the network nearly in half 
+  compared to the Mesh.
+
+2. MEDIUM TRAFFIC PERFORMANCE (Injection Rates = 0.05 to 0.15)
+-------------------------------------------------------------------
+As we inject more packets into the network, latency starts rising 
+steeply for both topologies.
+
+* Packet queues begin backing up at router inputs, causing buffer 
+  delays.
+* In this mid-range, the Torus experiences slightly higher average 
+  latency than the Mesh under dimension-order routing (dim_order). 
+  This happens because traffic concentrates heavily on those shared 
+  wrap-around links, creating localized bottlenecks.
+
+3. HIGH TRAFFIC / SATURATION (Injection Rates = 0.18 to 0.25)
+-------------------------------------------------------------------
+Beyond an injection rate of 0.18, both networks reach full capacity 
+(saturation).
+
+* Average latency levels off into a plateau between 440 and 463 cycles 
+  because the router buffers stay constantly full.
+* Even though latency is high, the Torus handles the heavy load 
+  without deadlocking, benefiting from its higher overall bisection 
+  bandwidth.
+===================================================================
